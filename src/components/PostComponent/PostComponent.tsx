@@ -1,17 +1,15 @@
 import './post-component.css'
+import {MyPropsTitlePostsComponent}  from "../../interfaces/interface";
 
-const PostComponent = () => {
+
+
+const PostComponent = ({title, content}: MyPropsTitlePostsComponent) => {
     return (
         <>
             <div className="post">
-                <h1 className="post-title">Post Title</h1>
+                <h1 className="post-title">{title}</h1>
                 <hr />
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-                    animi! Aut adipisci atque ipsa magnam obcaecati, laudantium non
-                    delectus, ab expedita ducimus corrupti recusandae rem enim aperiam
-                    sapiente deserunt quibusdam.
-                </p>
+                <h2>{content}</h2>
             </div>
         </>
     )

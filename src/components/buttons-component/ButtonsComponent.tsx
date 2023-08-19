@@ -1,18 +1,10 @@
 import "./buttons-component.css"
+import { MyPropsButtonsComponent } from "../../interfaces/interface";
 
-const ButtonsComponent = () => {
+const ButtonsComponent = ({ index }: MyPropsButtonsComponent) => {
     return (
         <>
-        <div className="button-container">
-            <button>click</button>
-            <button>click</button>
-            <button>click</button>
-            <button>click</button>
-            <button>click</button>
-            <button>click</button>
-            <button>click</button>
-            <button>click</button>
-        </div>
+                <button>{index}</button>
         </>
     )
 }
