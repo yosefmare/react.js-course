@@ -1,10 +1,10 @@
 import "./buttons-component.css"
 import { MyPropsButtonsComponent } from "../../interfaces/interface";
 
-const ButtonsComponent = ({ index }: MyPropsButtonsComponent) => {
+const ButtonsComponent = ({ index, word}: MyPropsButtonsComponent) => {
     return (
         <>
-                <button>{index}</button>
+                <button>{index}{word}</button>
         </>
     )
 }
